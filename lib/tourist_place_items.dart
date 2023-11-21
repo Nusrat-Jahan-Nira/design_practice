@@ -1,39 +1,39 @@
-import 'package:design_practice/tourist_place_list.dart';
+import 'package:design_practice/tourist_place_list_model.dart';
 
-List<TouristPlaceList> touristPlaceList = [
-  TouristPlaceList(
+List<TouristPlaceListModel> touristPlaceList = [
+  TouristPlaceListModel(
       name: "Sundarbans",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
     name: "Cox's Bazar Beach",
     shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: "Sonargaon",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: "Lalbag Fort",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: "Saint Martin Island",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: "Bangladesh National Museum",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: "Ratargul Swamp Forest",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: "Liberation War Museum",
       shortDescription: "This is so beautiful place"
   ),
-  TouristPlaceList(
+  TouristPlaceListModel(
       name: " Sajek",
       shortDescription: "This is so beautiful place"
   ),

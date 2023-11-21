@@ -2,10 +2,10 @@
 import 'package:design_practice/tourist_place_items.dart';
 import 'package:flutter/material.dart';
 
-class ListViewPage extends StatelessWidget {
+class TouristListViewPage extends StatelessWidget {
 
 
-  const ListViewPage({super.key});
+  const TouristListViewPage({super.key});
 
   // List<TouristPlaceList> touristPlaceList = [] ;
 

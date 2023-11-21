@@ -1,4 +1,4 @@
-import 'package:design_practice/list_view_page.dart';
+import 'package:design_practice/division_grid_view.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListViewPage(),
+      home: DivisionGridView(),
     );
   }
 }
