@@ -1,5 +1,6 @@
 
 import 'package:design_practice/division_items.dart';
+import 'package:design_practice/tourist_list_view_page.dart';
 import 'package:flutter/material.dart';
 
 class DivisionGridView extends StatelessWidget {
@@ -17,12 +18,17 @@ class DivisionGridView extends StatelessWidget {
             mainAxisSpacing: 2,
           ),
           itemCount: divisionList.length,
-          itemBuilder: (context,index)=>Card(
-            color: Colors.red.shade300,
-            elevation: 5,
-            child: Center(
-              child: Text(divisionList[index].divisionName.toString(),
-              style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+          itemBuilder: (context,index)=>GestureDetector(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> const TouristListViewPage()));
+            },
+            child: Card(
+              color: Colors.red.shade300,
+              elevation: 5,
+              child: Center(
+                child: Text(divisionList[index].divisionName.toString(),
+                style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+              ),
             ),
           )
       ),

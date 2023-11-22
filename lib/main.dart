@@ -1,4 +1,6 @@
 import 'package:design_practice/division_grid_view.dart';
+import 'package:design_practice/menu_page.dart';
+import 'package:design_practice/tourist_place_detail_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DivisionGridView(),
+      home: MenuPage(),
     );
   }
 }

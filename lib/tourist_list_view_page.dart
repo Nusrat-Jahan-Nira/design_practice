@@ -1,4 +1,5 @@
 
+import 'package:design_practice/tourist_place_detail_page.dart';
 import 'package:design_practice/tourist_place_items.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,9 @@ class TouristListViewPage extends StatelessWidget {
       ListView.builder(
         itemCount: touristPlaceList.length,
         itemBuilder: (context,index)=> GestureDetector(
-          onTap: null,
+          onTap: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> const TouristPlaceDetailsPage()));
+          },
           child: Padding(
             padding: const EdgeInsets.all(4.0),
             child: ListTile(

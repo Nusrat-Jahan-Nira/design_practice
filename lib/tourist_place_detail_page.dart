@@ -19,7 +19,7 @@ class TouristPlaceDetailsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _imageSection(),
+            _imageSection(context),
             _headerSection(),
             _navigationSection(),
             _bodySection()
@@ -106,15 +106,28 @@ class TouristPlaceDetailsPage extends StatelessWidget {
     );
   }
 
-  Widget _imageSection() {
+  Widget _imageSection(BuildContext context) {
     return Stack(
       clipBehavior: Clip.none,
       children: [
+
         Image.network(
           picSource,
           height: 200,
           width: double.infinity,
           fit: BoxFit.cover,
+        ),
+        Positioned(
+          top: 30.0,
+          left: 10.0,
+          child: GestureDetector(
+            onTap: (){
+              Navigator.pop(context);
+            },
+            child: Icon(Icons.arrow_back,
+              color: Colors.black,
+            fill: 0.2),
+          ),
         ),
         const Positioned.fill(
           child: Center(
